@@ -5,7 +5,6 @@ import { FaBuffer } from 'react-icons/fa';
 
 function Home() {
     return (
-        <div>
             <Layout>
                 <div className='text-center'>
                     Hello Made in Nigeria Showroom
@@ -13,7 +12,6 @@ function Home() {
                     <FaBuffer />
                 </div>
             </Layout>
-        </div>
     )
 }
 
