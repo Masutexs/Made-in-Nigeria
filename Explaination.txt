@@ -1,0 +1,10 @@
+This is where we be explaining some of the things happening in the web App
+
+## To use an icon, install:
+npm install react-icons --save
+
+go to this site:
+https://react-icons.github.io/react-icons
+
+search for fontawesome on the sidebar, select an icon of your choice
+and use it. See example in home.jsx file
