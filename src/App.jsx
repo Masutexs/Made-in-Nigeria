@@ -1,11 +1,18 @@
-import { useState } from 'react'
+import { BrowserRouter, Route, Routes  } from "react-router-dom";
 import './App.css'
+import Home from "./pages/landing-pages/home";
+import ErrorPage from "./pages/error-page";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello Made in Nigeria
-    </h1>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />}>
+        {/* <Route index element={<Home />} /> */}
+        <Route path="*" element={<ErrorPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
   )
 }
 
