@@ -2,7 +2,10 @@ import React from 'react'
 
 function LoginPage() {
   return (
-    <div>LoginPage</div>
+    <div>
+      <input type="text" name="" id="" placeholder='name' required/>
+      <input type="submit" value="Login" />
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='text-black shadow py-8 text-[20px]'>Footer</div>
   )
 }
 
