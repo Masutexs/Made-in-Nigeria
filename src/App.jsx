@@ -5,6 +5,8 @@ import ErrorPage from "./pages/landing-pages/error-page";
 import Contact from "./pages/landing-pages/contact";
 import Login from './pages/auth/login';
 import Signup from './pages/auth/signup';
+import Computer from './pages/landing-pages/computer'
+
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
 
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/signup" element={<Signup />} />
-
+        <Route exact path="/computer" element={<Computer />} />
         <Route/>
     </Routes>
   </BrowserRouter>
