@@ -3,6 +3,10 @@ import './App.css'
 import Home from "./pages/landing-pages/home";
 import ErrorPage from "./pages/landing-pages/error-page";
 import Contact from "./pages/landing-pages/contact";
+import Login from './pages/auth/login';
+import Signup from './pages/auth/signup';
+import Computer from './pages/landing-pages/computer'
+
 
 function App() {
   return (
@@ -12,6 +16,11 @@ function App() {
         {/* <Route index element={<Home />} /> */}
       <Route exact path="/contact" element={<Contact />} />
         <Route exact path="*" element={<ErrorPage />} />
+
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/computer" element={<Computer />} />
+        <Route/>
     </Routes>
   </BrowserRouter>
   )

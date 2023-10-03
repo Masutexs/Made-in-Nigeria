@@ -5,9 +5,9 @@ import Footer from "../footer/footer";
 const Layout = ({ children }) => {
   return (
     <>
-      <section className='text-center items-center bg-[gray] h-[100vh] text-white flex flex-col justify-between '>
+      <section className='text-center  text-white flex flex-col'>
         <Navbar />
-        <div>{children}</div>
+        <div className="p-8">{children}</div>
         <Footer />
       </section>
     </>
