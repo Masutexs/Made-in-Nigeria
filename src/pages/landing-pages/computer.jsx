@@ -1,5 +1,6 @@
 import React from 'react'
 import { items } from '../../components/shared-components/Items/itemData';
+import Layout from '../../components/shared-components/layout/layout';
 
 function Computer() {
 
@@ -8,17 +9,18 @@ function Computer() {
         );
   return (
 
+    <Layout>
     <div className='grid grid-cols-5'>  
 
     {laptop.map(item=>
-      <div key={item.id} className='w-[200px] h-[246px] bg-white rounded-[5px] shadow  border-black border-opacity-10' >
+      <div key={item.id} className='w-fit p-10 gap-10 h-[] bg-white rounded-[5px] shadow  border-black border-opacity-10' >
 
         {/* The Image section  */}
         <div className='relative w-[200px]  h-[140px] bg-neutral-400 rounded'>
           {/* The black-blue Hexagon  */}
             
           {/* The Product image  */}
-          <img className=' m-auto' src={"../src/assets/"+item.image} alt={item.image} />
+          <img className=' m-auto w-full' src={"../src/assets/"+item.image} alt={item.image} />
 
         </div>
 
@@ -43,6 +45,7 @@ function Computer() {
       </div>
     )}
     </div>
+    </Layout>
   )
 }
 
