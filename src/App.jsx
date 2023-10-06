@@ -20,6 +20,8 @@ function App() {
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/computer" element={<Computer />} />
+
+        <Route exact path="/computer/:id" element={<Contact />} />
         <Route/>
     </Routes>
   </BrowserRouter>
