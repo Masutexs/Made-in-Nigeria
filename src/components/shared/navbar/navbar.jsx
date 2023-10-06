@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import { FaAngleDown } from 'react-icons/fa'
-import Logo from "../../../assets/LOGO.png"
+import Logo from "../../../assets/MINS-logo.png"
 
 function Navbar() {
   return (
@@ -9,8 +9,8 @@ function Navbar() {
       <nav className=" bg-black  justify-center flex items-center gap-10 py-4">
 
         {/* Logo section */}
-        <div className="px-2 py-[2px] bg-white rounded-[9px] justify-center items-center inline-flex">
-        <img className="w-[78px] h-[83px] " src={Logo} />
+        <div className="h-[38px] flex flex-col justify-center px-2 py-[2px] bg-white rounded-[9px]">
+        <img className="h-[100%]" src={Logo} />
         </div>
         
       
