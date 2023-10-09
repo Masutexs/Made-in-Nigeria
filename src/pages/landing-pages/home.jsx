@@ -10,8 +10,8 @@ function Home() {
     return (
             <Layout>
                 {/* <ItemsComponent/> */}
-                <Computer/>
-                {/* <Sidebar/> */}
+                {/* <Computer/> */}
+                <Sidebar/>
             </Layout>
     )
 }

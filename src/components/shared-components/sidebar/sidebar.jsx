@@ -21,8 +21,8 @@ export function Sidebar() {
         <h2 className="  pb-4 text-black text-base font-medium font-['Poppins']">Price</h2>
 
         <div className="text-black text-xs font-normal font-['Poppins'] space-y-2 ">
-          <input name='price' type="radio" />
-          <label htmlFor=""> Under 2000</label><br />
+          <input className="w-[9px] h-[9px] bg-zinc-300 rounded-full border border-green-700"  name='price' type="button" style={{}}/>
+          <label htmlFor=""> Under 2000 hello</label><br />
 
           <input name='price' type="radio" />
           <label htmlFor=""> 2000-4000</label><br />
@@ -48,11 +48,13 @@ export function Sidebar() {
       <hr className='border border-green-700 ' />
       <section className="flex flex-col pl-2 py-6">
         <h2 className="pb-2 text-black text-base font-normal font-['Poppins']">Brands</h2>
-        <div className='flex space-x-4 pb-2'>
+        <div className='flex space-x-4 pb-4 '>
 
           <input type="text" className="w-[136px] h-[21px] bg-white rounded-[5px] border border-green-700" name="" placeholder='Search' id="" />
           <button className="w-[50px] h-[21px] bg-white rounded-lg border border-green-700 text-black text-[11px] font-normal font-['Poppins']">search</button>
         </div>
+        <div className="flex flex-col space-y-2 text-black text-xs font-normal font-['Poppins'] ">
+
         <label htmlFor="">HP</label>
         <label htmlFor="">Dell</label>
         <label htmlFor="">Asus</label>
@@ -60,6 +62,7 @@ export function Sidebar() {
         <label htmlFor="">Apple</label>
         <label htmlFor="">ZTE</label>
 
+        </div>
       </section>
       <hr className='border border-green-700 ' />
     </div>
