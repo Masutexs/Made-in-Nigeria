@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <>
       <section className='  text-white flex flex-col'>
         <Navbar />
-        <div className="p-8">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </section>
     </>
