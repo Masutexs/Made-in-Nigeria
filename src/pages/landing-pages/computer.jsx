@@ -1,4 +1,3 @@
-import React from 'react'
 import { items } from '../../components/shared-components/Items/itemData';
 import Layout from '../../components/shared-components/layout/layout';
 
