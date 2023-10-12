@@ -244,8 +244,7 @@ function Payment() {
                 Order summary
                 <br />
                 <br />
-                Item's total(1)
-                {"           "} ₦ 6,074
+                Item's total(1){" "} ₦ 6,074
 
                 <br />
                 <br />
