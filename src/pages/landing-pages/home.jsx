@@ -4,14 +4,15 @@ import Layout from '../../components/shared/layout/layout'
 // import { FaBuffer } from 'react-icons/fa';
 import ItemsComponent from '../../components/shared/Items/itemsComponent';
 import Computer from './computer';
-import { Sidebar } from '../../components/shared/sidebar/sidebar';
+import { Sidebar, ToggleSidebarr } from '../../components/shared/sidebar/sidebar';
 
 function Home() {
     return (
             <Layout>
                 {/* <ItemsComponent/> */}
                 {/* <Computer/> */}
-                <Sidebar/>
+                <ToggleSidebarr/>
+                {/* <Sidebar/> */}
             </Layout>
     )
 }
