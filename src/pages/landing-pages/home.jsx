@@ -4,11 +4,12 @@ import Layout from '../../components/shared/layout/layout'
 // import { FaBuffer } from 'react-icons/fa';
 import ItemsComponent from '../../components/shared/Items/itemsComponent';
 import Computer from './computer';
-import { Sidebar } from '../../components/shared/sidebar/sidebar';
+import { Sidebar, ToggleSidebarr } from '../../components/shared/sidebar/sidebar';
 import { items } from "../../components/shared/Items/itemData";
 import Range from '../../components/Range';
 import { Link } from 'react-router-dom';
 import Button from '../../components/shared/button/button';
+import { Rating } from 'flowbite-react';
 
 
 
@@ -26,8 +27,9 @@ function Home() {
 
     return (
         <Layout>
-            <Sidebar />
-            <Range Text={'Shop for  top tier Laptops'} word={'View All'}  link={'/computer'}/>
+            {/* <Sidebar /> */}
+            <ToggleSidebarr />
+            <Range Text={'Shop for  top tier Laptops'} word={'View All'} link={'/computer'} />
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 md:grid-cols-3'>
                 {Limitedlaptop.map((item, index) =>
@@ -69,14 +71,22 @@ function Home() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="text-black text-[11px] font-normal font-['Poppins']">Ratings:</div>
+                            <div className="flex gap-6 pt-3 text-black text-[11px] font-normal font-['Poppins']">Ratings:
+                                <Rating>
+                                    <Rating.Star />
+                                    <Rating.Star />
+                                    <Rating.Star />
+                                    <Rating.Star />
+                                    <Rating.Star filled={false} />
+                                </Rating>
+                            </div>
                         </div>
                     </div>
 
                 )}
             </div>
 
-            <Range Text={'Shop for  top tier Cosmetic'} word={'View All'}  link={'/cosmetic'}/>
+            <Range Text={'Shop for  top tier Cosmetic'} word={'View All'} link={'/cosmetic'} />
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 md:grid-cols-3'>
                 {Limitedcosmetic.map((item, index) =>
