@@ -1,89 +1,12 @@
+import Layout from "../../components/shared/layout/layout"
+import { ToggleSidebarr } from "../../components/shared/sidebar/sidebar"
 
 
 
 function Payment() {
   return (
-    <>
-
-      <div id="NewRootRoot" className="flex flex-col w-full">
-        <div className="bg-black flex flex-row gap-10 h-12 shrink-0 items-start pt-1 pl-[303px] pr-[275px]">
-
-
-
-
-
-          <div className="bg-white self-center relative flex flex-col w-[423px] shrink-0 items-start px-32 py-1 rounded-lg">
-
-
-            <img
-              src="https://file.rendit.io/n/NqDewQiqQvt2oOruCfQq.svg"
-              className="w-3 h-3 origin-top-left rotate-[-11.07deg] absolute top-3 left-5"
-            />
-
-
-
-            <input className="w-7000" type="text" placeholder="Search" />
-            <div className="font-['Poppins'] text-[#949494] relative"></div>
-          </div>
-
-
-          <div className="bg-white flex flex-col w-16 shrink-0 h-8 items-center mt-2 mr-px py-1 rounded-lg">
-            <button>
-              <div className="text-sm font-['Poppins'] text-[#1e1e1e]">Search</div></button>
-          </div>
-
-          <div className="bg-white relative flex flex-row justify-end gap-1 w-[109px] shrink-0 items-center mt-2 mr-px px-2 rounded-lg">
-            <img
-              src="https://file.rendit.io/n/n5TWx7qxnxpx0q2ANs26.svg"
-              className="w-4 h-4 origin-top-left rotate-[-0.25deg] absolute top-2 left-2"
-            />
-            <button>
-              <div className="text-sm font-['Poppins'] text-[#1e1e1e] relative my-1">
-                Account<span> </span>
-              </div></button>
-            <img
-              src="https://file.rendit.io/n/SM9Lj406tu6AgqwgMTvr.svg"
-              className="relative w-2 shrink-0"
-            />
-          </div>
-          <div className="bg-white flex flex-row gap-2 w-24 shrink-0 h-8 items-start mt-2 mr-px pt-1 pl-2 pr-3 rounded-lg">
-            <img
-              src="https://file.rendit.io/n/c872yTIPwYeUUTl9DI2v.svg"
-              className="mt-1 w-4 shrink-0"
-            />
-            <div className="flex flex-row mt-1 gap-1 w-12 shrink-0 items-center">
-
-              <button>
-                <div className="text-sm font-['Poppins'] text-[#1e1e1e] self-start">
-                  Help
-                </div></button>
-              <img
-                src="https://file.rendit.io/n/G4K52SdD190Z9uYkqtZH.svg"
-                className="w-2 shrink-0"
-              />
-            </div>
-          </div>
-          <div className="bg-white flex flex-row mt-1 gap-2 w-20 shrink-0 h-8 items-start pt-1 px-2 rounded-lg">
-            <img
-              src="https://file.rendit.io/n/Zt9Id4GV4kp0N1OTncYY.svg"
-              className="mt-1 w-5 shrink-0"
-            />
-
-            <button>
-              <div className="text-sm font-['Poppins'] text-[#1e1e1e] mt-1">Cart</div></button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
+    <Layout>
+       <ToggleSidebarr/>
       <div id="NewRootRoot" className="flex flex-col w-full">
         <div
           id="MacBookPro"
@@ -269,7 +192,7 @@ function Payment() {
 
 
 
-    </>
+    </Layout>
   )
 }
 

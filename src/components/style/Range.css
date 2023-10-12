@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.para1{
+    color: #000;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.para2{
+    color: #018D2D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.range{
+    display: flex;
+    
+}
+
+.range1 {
+    width: 90px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #D9D9D9;
+}
+
+.range2 {
+    width: 131px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #018D2D;
+    position: relative;
+    right: 20px;
+}

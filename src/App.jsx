@@ -9,6 +9,7 @@ import Computer from './pages/landing-pages/computer'
 import Payment from "./pages/Order-Section/Payment";
 
 import Cosmetic from "./pages/landing-pages/cosmetic";
+import ComingSoon from "./pages/landing-pages/coming-soon";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/computer" element={<Computer />} />
         <Route exact path="/payment" element={<Payment />} />
         <Route exact path="/cosmetic" element={<Cosmetic />} />
+        <Route exact path="/coming-soon" element={<ComingSoon />} />
 
 
         <Route exact path="/computer/:id" element={<Contact />} />

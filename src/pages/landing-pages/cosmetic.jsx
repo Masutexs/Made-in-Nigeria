@@ -3,7 +3,7 @@ import { items } from '../../components/shared/Items/itemData';
 import Layout from '../../components/shared/layout/layout';
 import Button from '../../components/shared/button/button';
 import { Link } from 'react-router-dom';
-import { Sidebar } from '../../components/shared/sidebar/sidebar';
+import { Sidebar, ToggleSidebarr } from '../../components/shared/sidebar/sidebar';
 
 function Cosmetic() {
 
@@ -13,20 +13,20 @@ function Cosmetic() {
   return (
 
     <Layout>
-      <div className='flex'>
+       <ToggleSidebarr/>
 
-      <Sidebar/>
+      <div className='flex'>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-16 md:grid-cols-3'>
 
         {Cosmetic.map((item, index) =>
           <div key={item.id} className=" bg-white rounded-[5px] mx-auto shadow border border-black border-opacity-10 p-4" >
 
             {/* The Image section  */}
-            <div className="w-[200px] h-[fit-content] flex-shrink-0 bg-neutral-400 rounded">
+            <div className="w-[] h-[fit-content] flex-shrink-0 bg-neutral-400 rounded">
               {/* The black-blue Hexagon  */}
 
               {/* The Product image  */}
-              <img className=' m-auto h-[130px] w-[150px]' src={"../src/assets/" + item.image} alt={item.image} />
+              <img className=' m-auto h-[130px]' src={"../src/assets/" + item.image} alt={item.image} />
 
             </div>
 

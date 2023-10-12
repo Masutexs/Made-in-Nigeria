@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./sidebar.css"
 
 export function Sidebar() {
@@ -88,13 +89,13 @@ export const ToggleSidebarr = () => {
               <i className="fa fa-bars text-white"></i>
             </div>
             <div className="container-fluid p-1 space-x-12">
-              <a className=" text-black font-semibold font-['Inter'] text-base  ">All Categories</a>
-              <a className=" border h-[34px] px-3 py-2.5 bg-white rounded-[15px] justify-center items-center gap-2.5 inline-flex text-black font-semibold font-['Inter'] text-base  ">Computer and accessories</a>
-              <a href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Phones</a>
-              <a href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Electronics</a>
-              <a href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Home and Kitchen</a>
-              <a href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Clothes</a>
-              <a href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Cosmetics</a>
+              <Link to={'/'} className=" text-black font-semibold font-['Inter'] text-base  ">All Categories</Link>
+              <Link to={'/computer'} className=" border h-[34px] px-3 py-2.5 bg-white rounded-[15px] justify-center items-center gap-2.5 inline-flex text-black font-semibold font-['Inter'] text-base  ">Computer and accessories</Link>
+              <Link to={'/coming-soon'} href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Phones</Link>
+              <Link to={'/coming-soon'} href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Electronics</Link>
+              <Link to={'/coming-soon'} href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Home and Kitchen</Link>
+              <Link to={'/coming-soon'} href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Clothes</Link>
+              <Link to={'/cosmetic'} href="" className=" h-5 text-white text-base font-semibold font-['Inter']">Cosmetics</Link>
               <div className="form-inline ml-auto">
               </div>
             </div>
