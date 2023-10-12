@@ -82,7 +82,7 @@ export const ToggleSidebarr = () => {
     <>
       <div className=" ">
         <nav className="flex justify-center text-white bg-green-700 ">
-          <div className="w-fit flex">
+          <div className="w-fit flex justify-center">
 
             <div className="btn mr-2 " onClick={ToggleSidebar} >
               <i className="fa fa-bars text-white"></i>
