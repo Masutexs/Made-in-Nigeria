@@ -2,7 +2,7 @@ import React from 'react'
 
 function Button() {
   return (
-    <div>Add to</div>
+    <div>Add to Cart</div>
   )
 }
 
