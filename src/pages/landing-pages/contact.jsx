@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/shared/layout/layout'
 import { useParams } from "react-router-dom";
 import { items } from '../../components/shared/Items/itemData';
-import Comptest from '../../assets/comp3.png'
+
 
 function Contact() {
   const { id } = useParams();
@@ -12,7 +12,7 @@ function Contact() {
 
   return (
     <Layout>
-      <h1>Product Description</h1>
+      <h1>Product Description {alert(dataItems.id)}</h1>
       <div className='text-black'>
         <h4>{dataItems.productName}</h4>
         <p> {dataItems.slashPrice}</p>
@@ -21,7 +21,7 @@ function Contact() {
              '>
 
           <main className="left md:w-1/2 h-96 w-full ">
-            <figure className='overview-img-big-wrap m-auto w-[180px] h-[210px] overflow-hidden border '>
+            <figure className='overview-img-big-wrap m-auto w-[180px] h-[210px] overflow-hidden '>
               <img className="overview-img-big m-auto w-auto " src={"../src/assets/" + dataItems.image} />
             </figure>
 
@@ -38,7 +38,7 @@ function Contact() {
               </figure>
             </div>
           </main>
-          <aside className='overview-aside py-10 md:w-1/2 h-96 w-full   p-8 '>
+          <aside className='overview-aside py-10 md:w-1/2 h-96 w-full   px-8 '>
             <h4>
               {dataItems.productName}
             </h4>
@@ -61,6 +61,39 @@ function Contact() {
             </div>
           </aside>
         </section>
+        <hr className='overview-hr-lower bg-green-900 h-[0.18rem] mb-2 mx-8 ' />
+
+        <section className='overview-order-section p-8'>
+                <ul className='overview-ul flex justify-between md:gap-[6rem]  md:justify-start  '>
+
+                    <li className='overview-overview hover:text-green-600  '>
+                        Overview
+                    </li>
+
+                    <li className='overview-description hover:text-green-600'>
+                        Description
+                    </li>
+
+                    <li className='overview-shipping hover:text-green-600'>
+                        Shipping
+                    </li>
+
+                    <li className='overview-warranty hover:text-green-600'>
+                        Warranty
+                    </li>
+
+                    <li className='overview-policy hover:text-green-600'>
+                        Return
+                        Policy
+                    </li>
+
+                    <li className='overview-rating hover:text-green-600'>
+                        Rating
+                    </li>
+                    
+                </ul>
+                {/* <Order /> */}
+            </section>
       </div>
 
 

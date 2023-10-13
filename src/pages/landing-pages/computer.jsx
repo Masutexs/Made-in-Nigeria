@@ -18,7 +18,8 @@ function Computer() {
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 md:grid-cols-3 justify-center'>
 
-          {laptop.map((item, index) =>
+          {laptop.map((item) =>
+
             <div key={item.id} className=" bg-white rounded-[5px] mx-auto shadow border border-black border-opacity-10 p-4" >
 
               {/* The Image section  */}
@@ -52,7 +53,7 @@ function Computer() {
                   <div className="justify-center items-center inline-flex ">
                     {/* <div className="text-black text-[13px] font-normal font-['Poppins'] m-0">Add Cart</div> */}
 
-                    <Link to={`/computer/${index + 1}`}>
+                    <Link to={`/computer/${item.id}`}>
                       <Button />
                     </Link>
                   </div>
