@@ -1,7 +1,7 @@
-import slideimg1 from '../../../assets/slideimg1.png';
-import slideimg2 from '../../../assets/slideimg2.png';
-import slideimg3 from '../../../assets/slideimg3.png';
-import slideimg4 from '../../../assets/slideimg4.png';
+import slideimg1 from '../../../assets/carousel_assets/slideimg1.png';
+import slideimg2 from '../../../assets/carousel_assets/slideimg2.png';
+import slideimg3 from '../../../assets/carousel_assets/slideimg3.png';
+import slideimg4 from '../../../assets/carousel_assets/slideimg4.png';
 
 export const carouselData = [
   {
