@@ -26,10 +26,10 @@ function Computer() {
                 {/* The black-blue Hexagon  */}
 
                 {/* The Product image  */}
-                <img className=' m-auto h-[140px]' src={"../src/assets/" + item.image} alt={item.image} />
+                <img className=' mt-auto h-[140px]' src={"../src/assets/" + item.image} alt={item.image} />
 
               </div>
-
+ 
               {/* Product Details section*/}
               <div className='text-left '>
                 {/* Product Name  */}
