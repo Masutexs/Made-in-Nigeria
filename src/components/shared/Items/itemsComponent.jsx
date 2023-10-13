@@ -1,5 +1,7 @@
 import React from 'react';
 import { items } from './itemData.js';
+
+
 export default function ItemsComponent() {
   return (
     <>

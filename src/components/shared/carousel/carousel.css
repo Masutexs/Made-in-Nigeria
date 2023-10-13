@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+.carousel-wrapper {
+  justify-content: center;
+  display: flex;
+}
+.card {
+  background-image: linear-gradient(to right, #018d2d 50%, #000 50%);
+  position: relative;
+  border-radius: 4px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.carousel-logo {
+  position: absolute;
+  left: -10px;
+  background: #ffff;
+  max-width: 100px;
+  height: 50px;
+  margin: 25px;
+  border-radius: 10px;
+}
+
+.carousel-description {
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 25px;
+  margin-top: 130px;
+  text-align: left;
+  width: 290px;
+}
+
+.carousel-image {
+  height: 370px;
+  padding-left: 50px;
+}
+
+.carousel-button {
+  display: flex;
+  background: #fff;
+  color: #000;
+  padding: 9px;
+  text-align: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 40px 0 0 40px;
+  transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
+}
+
+.button-arrow {
+  text-align: center;
+  margin-top: 3px;
+  font-size: 24px;
+}
+
+.carousel-right-side-image {
+  height: 367px;
+  padding-bottom: 57.5px;
+}
+
+.carousel-button:hover {
+  opacity: 0.7;
+}
+.carousel-button:active {
+  opacity: 0.5;
+}
+
+.carousel .carousel-status {
+  display: none;
+}
+
+.carousel .thumb {
+  display: none;
+}
+
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  display: none;
+}
