@@ -9,9 +9,11 @@ function Navbar() {
       <nav className=" bg-black  justify-center flex items-center gap-10 py-4">
 
         {/* Logo section */}
+        <Link to={'/'}>
         <div className="h-[38px] flex flex-col justify-center px-2 py-[2px] bg-white rounded-[9px]">
         <img className="h-[100%]" src={Logo} />
         </div>
+        </Link>
         
       
 
