@@ -7,7 +7,6 @@ import Login from './pages/auth/login';
 import Signup from './pages/auth/signup';
 import Computer from './pages/landing-pages/computer'
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -23,7 +22,9 @@ function App() {
 
         <Route exact path="/computer/:id" element={<Contact />} />
         <Route/>
+        <Route/>
     </Routes>
+   
   </BrowserRouter>
   )
 }
