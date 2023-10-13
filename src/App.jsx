@@ -11,7 +11,6 @@ import Payment from "./pages/Order-Section/Payment";
 import Cosmetic from "./pages/landing-pages/cosmetic";
 import ComingSoon from "./pages/landing-pages/coming-soon";
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -31,7 +30,9 @@ function App() {
 
         <Route exact path="/computer/:id" element={<Contact />} />
         <Route/>
+        <Route/>
     </Routes>
+   
   </BrowserRouter>
   )
 }
